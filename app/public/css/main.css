@@ -1,0 +1,115 @@
+*{
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #212529;
+}
+
+body{
+    background-image: url(../img/background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btn{
+    font-weight: 300 !important;
+}
+
+#main_container{
+    padding-top: 150px;
+}
+
+#logo_img{
+    width: 240px;
+}
+
+#banner_img{
+    width: 570px;
+}
+
+#banner_img_container{
+    display: flex;
+    justify-content: end;
+}
+    
+#under_logo_text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #1F1F1F;
+
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+    width: 390px;
+}
+
+#buttons_container{
+
+}
+
+#login_button{
+    margin-right: 10px;
+}
+
+#content_line{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #1F1F1F;
+}
+
+#coppyright_text{
+    text-align: center;
+    font-size: 12px;
+    
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.section_img_container{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    body{
+        background: none;
+    }
+
+    #banner_img{
+        display: none;
+    }
+
+    #banner_content_container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #logo_img{
+        display: flex;
+        align-self: center;
+    }
+
+    #under_logo_text{
+        display: flex;
+        text-align: center;
+        align-self: center;
+        width: auto;
+    }
+
+
+    #buttons_container{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    #content_line{
+        border: none;
+        margin-bottom: 0;
+    }
+    
+}

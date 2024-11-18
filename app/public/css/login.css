@@ -1,0 +1,46 @@
+*{
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.btn{
+    font-weight: 300 !important;
+}
+
+#main_container{
+    
+}
+
+#content_container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-content: center;
+}
+
+#logo_img{
+    margin-bottom: 20px;
+}
+
+#logo_img_container{
+    
+    display: flex;
+    justify-content: center;
+}
+
+#buttons_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+#incorrect_input_date_text{
+    justify-content: center;
+    align-content: center;
+    color: #dc3545;
+    text-align: center;
+}
+
+#main_form{
+    margin-bottom: 0px;
+}

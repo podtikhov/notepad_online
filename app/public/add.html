@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/note.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/all_common.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="loading_page_container">
+            <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        
+        <div class="container" id="main_container">
+            <div class="pos-f-t">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="p-4">
+                        <div id="username_in_menu">username</div>
+                        <!--a class="nav-link" href="" id="settings_link">Настройки</a-->
+                        <a class="nav-link" href="/logout" id="logout_link">Выход</a>
+                    </div>
+                </div>
+            </div>    
+                
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="/notes">
+                    <img src="./img/logo.svg" id="logo_img">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>       
+
+            <div class="row justify-content-center" id="page_heading_container">
+                <!--div class="col-xl-8 col-lg-8 col-md-8" id="page_heading"></div-->
+            </div>
+
+            <div class="row justify-content-center" id="notes_container">          
+                  <form method="POST" action="/add" class="col-xl-8 col-lg-8 col-md-8">
+                    <div class="form-group">
+                        <textarea class="form-control" id="note_textarea" rows="10" name="note_value"></textarea>
+
+                        <div class="input-group mb-2" id="tag_input_group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">#</div>
+                            </div>
+
+                            <input type="text" class="form-control" name="tag" id="tag_input" placeholder="тег">
+                        </div>
+                    </div>
+
+                    <div class="" id="change_buttons_container">
+                        <a href="/"><button type="button" class="btn btn-outline-success" id="cancel_button">Отмена</button></a>
+                        <button type="submit" class="btn btn-success" id="ok_button">Ок</button>
+                    </div>
+                  </form>             
+            </div>
+
+            <img id="add_button" src="./img/add_button.svg">
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="js/add.js"></script>
+    </body>
+</html>

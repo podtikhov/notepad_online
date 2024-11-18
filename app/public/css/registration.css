@@ -1,0 +1,53 @@
+*{
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.btn{
+    font-weight: 300 !important;
+}
+
+#main_container{
+    
+}
+
+#content_container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-content: center;
+}
+
+#logo_img{
+    margin-bottom: 20px;
+}
+
+#logo_img_container{
+    
+    display: flex;
+    justify-content: center;
+}
+
+#buttons_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+#incorrect_username{
+    justify-content: center;
+    align-content: center;
+    color: #dc3545;
+    text-align: center;
+}
+
+#incorrect_password{
+    justify-content: center;
+    align-content: center;
+    color: #dc3545; 
+}
+
+#main_form{
+    margin-bottom: 0px;
+}
+

@@ -1,0 +1,23 @@
+*{
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #212529;
+}
+
+#content_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+#success_text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#buttons_container{
+    display: flex;
+    justify-content: center;
+}
